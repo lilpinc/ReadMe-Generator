@@ -64,10 +64,10 @@ console.log("Please answer all questions to generate your quality Readme!")
 
         .then((answers) => {
             // const readMeContent = generateReadMe(answers);
-            const readMeContent = `${data.name}`;
+            // const readMeContent = `${data.name}`; JSON.stringify(data, null, '\t')
 
             // function writeToFile(fileName, data) {
-            fs.writeFile('ReadMe.md', readMeContent, (err) => err ? console.log(err) : console.log('Your ReadMe has successfully been created!')
+            fs.writeFile('ReadMe.md', JSON.stringify(answers, null, '\t'), (err) => err ? console.log(err) : console.log('Your ReadMe has successfully been created!')
             );
             // fs.writeFile(fileName, JSON.stringify(data, null, '\t'), (err) =>
             //   err ? console.log(err) : console.log('Your ReadMe has successfully been created!')
