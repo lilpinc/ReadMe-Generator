@@ -4,7 +4,30 @@ const fs = require('fs');
 console.log("Welcome to my ReadMe Generator");
 console.log("Please answer all questions to generate your quality Readme!")
 
-// const generateReadMe = ({ title, description, installation, usage, license, contributing, tests }) =>
+const generateReadMe = ({ title, description, installation, usage, license, contributing, tests }) =>
+`# ${title}
+# Description
+${description}
+
+*[Installation](#installation)
+*[Usage](#usage)
+*[Contribution](#contribution)
+*[Credits](#credits)
+*[License](#license)
+
+# Installation
+${installation}
+## Usage
+${usage}
+## Contribution
+${contributing}
+## Test Instructions
+${tests}
+## License
+${license}
+
+# Contact
+`;
     // TODO: Create an array of questions for user input
     inquirer
         .prompt([
@@ -42,7 +65,7 @@ console.log("Please answer all questions to generate your quality Readme!")
                 name: 'license',
                 message: 'What license would you like to use for this project?',
                 choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense'],
-                default: 'MIT License',
+                // default: 'MIT License',
             },
             {
                 type: 'input',
@@ -63,11 +86,11 @@ console.log("Please answer all questions to generate your quality Readme!")
 // TODO: Create a function to write README file
 
         .then((answers) => {
-            // const readMeContent = generateReadMe(answers);
-            // const readMeContent = `${data.name}`; JSON.stringify(data, null, '\t')
+            const readMeContent = generateReadMe(answers);
+            // const readMeContent = JSON.stringify(answers, null, '\t')
 
             // function writeToFile(fileName, data) {
-            fs.writeFile('ReadMe.md', JSON.stringify(answers, null, '\t'), (err) => err ? console.log(err) : console.log('Your ReadMe has successfully been created!')
+            fs.writeFile('ReadMe.md', readMeContent, (err) => err ? console.log(err) : console.log('Your ReadMe has successfully been created!')
             );
             // fs.writeFile(fileName, JSON.stringify(data, null, '\t'), (err) =>
             //   err ? console.log(err) : console.log('Your ReadMe has successfully been created!')
