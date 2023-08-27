@@ -13,28 +13,24 @@ const questions = [
         name: 'title',
         message: 'What is your project title?',
         default: 'Project Title',
-        validate: (answer) => (answer.length > 1) ? true : console.log('Please enter a response for your project title')
     },
     {
         type: 'input',
         name: 'description',
         message: 'What is your project description?',
         default: 'Project Description',
-        validate: (answer) => (answer.length > 1) ? true : console.log('Please enter a response for your project description')
     },
     {
         type: 'input',
         name: 'installation',
         message: 'What is your project installation instructions?',
         default: 'Project Installation Instructions',
-        validate: (answer) => (answer.length > 1) ? true : console.log('Please enter a response for your project installation instructions')
     },
     {
         type: 'input',
         name: 'usage',
         message: 'What is your project usage information?',
         default: 'Project Usage',
-        validate: (answer) => (answer.length > 1) ? true : console.log('Please enter a response for your project usage')
     },
     {
         type: 'list',
@@ -48,14 +44,12 @@ const questions = [
         name: 'contributing',
         message: 'What are your project contribution guidelines?',
         default: 'Project Contributions',
-        validate: (answer) => (answer.length > 1) ? true : console.log('Please enter a response for your project contributions')
     },
     {
         type: 'input',
         name: 'tests',
         message: 'What are your project test instructions?',
         default: 'Project Test Instructions',
-        validate: (answer) => (answer.length > 1) ? true : console.log('Please enter a response for your project test instructions')
     }
 ]
 
@@ -70,7 +64,7 @@ function init() {
     inquirer.prompt(questions)
         .then((answers) => {
             console.log(answers)
-            writeToFile('README,md', generateMarkdown(answers));
+            writeToFile('README.md', generateMarkdown(answers));
         });
 };
 
