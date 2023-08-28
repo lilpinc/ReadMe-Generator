@@ -4,7 +4,7 @@ const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 
 console.log("Welcome to my ReadMe Generator");
-console.log("Please answer all questions to generate your quality Readme!")
+console.log("Please answer all questions to generate your quality Readme!");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -36,7 +36,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license would you like to use for this project?',
-        choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense'],
+        choices: ['Apache', 'GNU', 'MIT', 'BSD2', 'BSD3', 'BoostSoftware', 'CreativeCommonsZero', 'Eclipse', 'GNUAffero', 'GNUv2.0', 'GNULesserv2.1', 'Mozilla2.0', 'TheUnlicense'],
         // default: 'MIT License',
     },
     {
