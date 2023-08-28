@@ -1,16 +1,17 @@
 # ReadMe-Generator
-![GitHub License](https://img.shields.io/badge/License-MIT%20License-green.svg)
 Professional ReadMe Generator
+
+![GitHub License](https://img.shields.io/badge/License-MIT%20License-green.svg)
 
 ## Table of Contents
 
-* Description
-* Motivation
-* Usage
-* Installation Instructions
-* Video Demonstrations
-* Credits
-* License
+* [Description](#Description)
+* [Motivation](#Motivation)
+* [Usage](#Usage)
+* [Installation Instructions](#Installation-instructions)
+* [Video Demonstrations](#Video-demonstration)
+* [Credits](#credits)
+* [License](#credits)
 
 ## Description
 
@@ -42,7 +43,6 @@ Use this ReadMe Generator to quickly create an unique and personalized ReadMe.md
 Collaborators/Third-party: 
 
 - Bootcamp Instructor Dan, TA's, and classmates.
-
 
 
 ## License
