@@ -36,7 +36,11 @@ Use this ReadMe Generator to quickly create an unique and personalized ReadMe.md
 
 ## Video Demonstration
 
+Video Link:
 https://drive.google.com/file/d/1dn4iiiwo1tPDetba5qu3NpRjIpcktIeX/view
+
+Screenshot
+![Screenshot](images/Screen Shot 2023-08-28 at 1.41.23 PM.png)
 
 ## Credits
 
