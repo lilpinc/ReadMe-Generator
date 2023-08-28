@@ -47,6 +47,8 @@ Screenshot:
 Collaborators/Third-party: 
 
 - Bootcamp Instructor Dan, TA's, and classmates.
+- w3schools.com
+- developer.mozilla.org
 
 
 ## License
