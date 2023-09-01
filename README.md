@@ -5,13 +5,13 @@ Professional ReadMe Generator
 
 ## Table of Contents
 
-* [Description](#Description)
-* [Motivation](#Motivation)
-* [Usage](#Usage)
-* [Installation Instructions](#Installation-instructions)
-* [Video Demonstrations](#Video-demonstration)
+* [Description](#description)
+* [Motivation](#motivation)
+* [Usage](#usage)
+* [Installation Instructions](#installation-instructions)
+* [Video Demonstrations](#video-demonstration)
 * [Credits](#credits)
-* [License](#credits)
+* [License](#license)
 
 ## Description
 
@@ -40,7 +40,13 @@ Video Link:
 https://drive.google.com/file/d/1dn4iiiwo1tPDetba5qu3NpRjIpcktIeX/view
 
 Screenshot:
-![Screenshot](<Develop/images/Screen Shot 2023-08-28 at 1.41.23 PM.png>)
+![Screenshot](<images/Screen Shot 2023-08-28 at 1.41.23 PM.png>)
+
+## Questions?
+
+GitHub link to profile: https://github.com/lilpinc/
+
+Email: lilpinc@gmaill.com
 
 ## Credits
 
